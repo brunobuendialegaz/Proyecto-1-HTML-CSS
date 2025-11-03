@@ -1,0 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+:root {
+    --color-primary: #60922e;
+    --color-secondary: #023f16;
+    --color-text-light: #fff;
+    --spacing-unit: 20px;
+}
+
+header {
+    background-color: var(--color-primary);
+    padding: var(--spacing-unit);
+    display: flex;
+}
