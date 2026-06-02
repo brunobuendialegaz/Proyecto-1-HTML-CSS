@@ -26,7 +26,7 @@
             <ul>
                 <li><a href="#hero-section" class="nav-link">Inicio</a></li>
                 <li><a href="#about" class="nav-link">Sobre mi</a></li>
-                <li><a href="#proyectos" class="nav-link">Proyectos</a></li>
+                <li><a href="#projects" class="nav-link">Proyectos</a></li>
                 <li><a href="#Contact" class="nav-link">Contacto</a></li>
 
             </ul>
@@ -39,7 +39,7 @@
                 </h1>
                 <p class="hero-subtitle">Desarrollador Full Stack especializado en backend y soluciones inteligentes.
                 </p>
-                <a href="#proyects">Mis proyectos</a>
+                <a href="#projects">Mis proyectos</a>
             </div>
             <div class="hero-img">
                 <img src="img/" alt="imagen hero">
@@ -47,10 +47,182 @@
 
         </section>
         <section id="about">
+            <div class="about-container">
+                <div class="about-text">
+                    <h2>Sobre mí</h2>
+                    <p>Estudiante de segundo año de <span>Desarrollo de Aplicaciones Web (daw)</span> con un fuerte
+                        enfoque en la arquitectura del lado del servidor, gestion de bases de datos, micro-servicios y
+                        la optimización de procesos.</p>
+                    <p>Me apasiona transformar reglas de negocio complejas en código limpio, eficiente y escalable.
+                        Aplicando siempre las mejores practicas de programación orientado a crear soluciones robustas.
+                    </p>
 
+                </div>
+                <div class="about-skills">
+                    <h3>Mi Stack Técnico</h3>
+                    <ul class="skills-grid">
+                        <li class="skill-card">
+                            <img src="" alt="" class="skill-icon">
+                            <span class="skill-name">Github</span>
+                        </li>
+                        <li class="skill-card">
+                            <img src="" alt="" class="skill-icon">
+                            <span class="skill-name">SQL</span>
+                        </li>
+                        <li class="skill-card">
+                            <img src="" alt="" class="skill-icon">
+                            <span class="skill-name">Java</span>
+                        </li>
+                        <li class="skill-card">
+                            <img src="" alt="" class="skill-icon">
+                            <span class="skill-name">JavaFX</span>
+                        </li>
+                        <li class="skill-card">
+                            <img src="" alt="" class="skill-icon">
+                            <span class="skill-name">Spring</span>
+                            <span class="badge">Aprendizaje</span>
+                        </li>
+                        <li class="skill-card">
+                            <img src="" alt="" class="skill-icon">
+                            <span class="skill-name">HTML5</span>
+                        </li>
+                        <li class="skill-card">
+                            <img src="" alt="" class="skill-icon">
+                            <span class="skill-name">CSS3</span>
+                        </li>
+                        <li class="skill-card">
+                            <img src="" alt="" class="skill-icon">
+                            <span class="skill-name">JavaScript</span>
+                        </li>
+                        <li class="skill-card">
+                            <img src="" alt="" class="skill-icon">
+                            <span class="skill-name">React</span>
+                            <span class="badge">Aprendizaje</span>
+                        </li>
+                        <li class="skill-card">
+                            <img src="" alt="" class="skill-icon">
+                            <span class="skill-name">Python</span>
+                        </li>
+                        <li class="skill-card">
+                            <img src="" alt="" class="skill-icon">
+                            <span class="skill-name">Django</span>
+                            <span class="badge">Aprendizaje</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </section>
-        <section id="proyects">
+        <section id="projects" class="projects-section">
+            <div class="projects-container">
+                <h2>Proyectos Destacados</h2>
+                <div class="projects-grid">
+                    <article class="project-card featured-project">
+                        <div class="project-image">
+                            <img src="img/projects/retro-pvp-arena.webp" alt="Ecosistema RetroPVP Arena">
+                        </div>
+                        <div class="project-info">
+                            <div class="project-header-tags">
+                                <span class="project-badge">Proyecto Real</span>
+                                <span class="project-badge deployment">Vercel Live</span>
+                            </div>
+                            <h3>RetroPVP Arena — Plataforma Híbrida de Torneos</h3>
+                            <p>
+                                Ecosistema completo para la gestión y visualización de torneos gaming retro. El proyecto
+                                integra un cliente web interactivo para los usuarios junto a un potente panel de
+                                administración de escritorio desarrollado en <strong>JavaFX</strong>.
+                            </p>
+                            <p class="project-technical-details">
+                                La persistencia y lógica de negocio se gestionan mediante una arquitectura relacional de
+                                base de datos conectada por <strong>JDBC</strong>, permitiendo la administración en
+                                tiempo real de usuarios, clasificaciones y emparejamientos.
+                            </p>
 
+                            <div class="project-links">
+                                <a href="https://retro-pvp-arena.vercel.app/index.html" target="_blank"
+                                    rel="noopener noreferrer" class="btn-link">Ver Web en Vivo ↗</a>
+                            </div>
+
+                            <div class="project-tags">
+                                <span>JavaFX</span>
+                                <span>JDBC</span>
+                                <span>SQL / BBDD</span>
+                                <span>HTML5 & CSS3</span>
+                                <span>Vercel</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-img">
+                            <img src="" alt="">
+                        </div>
+                        <div class="project-info">
+                            <span class="project-badge">Full Stack</span>
+                            <h3>Viajes Delmiro</h3>
+                            <p>
+                                Web Centrada en viajes, actualmente solo parte visual de cliente. Diseño moderno y
+                                responsive.
+                            </p>
+                            <div class="project-tags">
+                                <span>HTML5</span>
+                                <span>CSS3</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-image">
+                            <img src="img/projects/springboot-app.webp" alt="Esquema de API REST con Spring Boot">
+                        </div>
+                        <div class="project-info">
+                            <span class="project-badge upcoming-badge">En Desarrollo</span>
+                            <h3>Barbería REST API</h3>
+                            <p>
+                                Desarrollo enfocado al backend para la gestión de una barbería con reservas online.
+                                Construcción de una
+                                API robusta con Spring Boot y arquitectura MVC, conectada con un
+                                cliente dinámico en JavaScript nativo.
+                            </p>
+                            <div class="project-tags">
+                                <span>Spring Boot</span>
+                                <span>Java</span>
+                                <span>JavaScript</span>
+                                <span>REST API</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-image">
+                            <img src="img/projects/book-social-network.webp"
+                                alt="Interfaz de usuario de la plataforma de lectura">
+                        </div>
+                        <div class="project-info">
+                            <div class="project-header-tags">
+                                <span class="project-badge upcoming-badge">Proyecto de Verano</span>
+                            </div>
+                            <h3>BookStream — Red Social Literaria</h3>
+                            <p>
+                                Plataforma web estilo Goodreads para amantes de la lectura. El sistema permite a los
+                                usuarios registrar lecturas, puntuar libros, redactar reseñas y seguir la actividad
+                                literaria de otros perfiles en tiempo real.
+                            </p>
+                            <p class="project-technical-details">
+                                Desarrollado con un backend robusto en Python y Django mediante una
+                                arquitectura de API REST, consumida de forma asíncrona por una SPA (Single Page
+                                Application) ágil e interactiva construida en React.
+                            </p>
+                            <div class="project-tags">
+                                <span>Django</span>
+                                <span>Python</span>
+                                <span>React</span>
+                                <span>REST API</span>
+                                <span>PostgreSQL</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
         </section>
         <section id="Contact">
 
