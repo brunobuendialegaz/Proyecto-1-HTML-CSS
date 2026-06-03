@@ -2,18 +2,53 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
 
+html {
+    scroll-behavior: smooth;
 }
 
 :root {
-    --color-primary: #60922e;
-    --color-secondary: #023f16;
-    --color-text-light: #fff;
-    --spacing-unit: 20px;
+    --base-hue: 222;
+
+    --bg-main: hsl(var(--base-hue), 47%, 11%);
+    --bg-surface: hsl(var(--base-hue),47%, 15%);
+    --bg-navbar: rgba(15, 23, 42, 0.85);
+
+    --accent: hsl(217, 91%, 60%);
+    --accent-hover: hsl(217, 91%, 50%);
+    --accent-learning: hsl(142, 70%, 45%);
+    --accent-upcoming: hsl(32, 95%, 60%);
+
+    --text-main: hsl(210, 40%, 98%);
+    --text-muted: hsl(215, 20%, 65%);
+
+    --gradient-primary: linear-gradient(135deg, hsl(217, 91%, 60%), hsl(260, 85%, 65%));
+    --gradient-surface: linear-gradient(180deg, var(--bg-surface), hsl(var(--base-hue), 47%, 13%));
+
+    --font-h1: clamp(2.2rem, 5vw, 3.8rem);
+    --font-h2: clamp(1.8rem, 4vw, 2.5rem);
+    --font-h3: clamp(1.3rem, 2.5vw, 1.8rem);
+    --font-body: clamp(0.95rem, 1.5vw, 1.1rem);
+
+    --radius-md: 12px;
+    --radius-sm: 6px;
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-header {
-    background-color: var(--color-primary);
-    padding: var(--spacing-unit);
-    display: flex;
+body {
+    background-color: var(--bg-main);
+    color: var(--text-main);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    line-height: 1.6;
+    font-size: var(--font-body);
+    overflow-x: hidden;
+}
+
+h2 {
+    font-size: var(--font-h2);
+    text-align: center;
+    margin-bottom: 2rem;
+    font-weight: 700;
+    letter-spacing: -0.02em;
 }
