@@ -43,7 +43,16 @@ body {
     line-height: 1.6;
     font-size: var(--font-body);
     overflow-x: hidden;
+    max-width: 1200px;
+    margin: 0 auto;
 }
+
+a {color: var(--text-muted);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.9rem;
+    transition: var(--transition-smooth);
+    position: relative;}
 
 h2 {
     font-size: var(--font-h2);
@@ -51,6 +60,10 @@ h2 {
     margin-bottom: 2rem;
     font-weight: 700;
     letter-spacing: -0.02em;
+}
+
+section[id] {
+    scroll-margin-top: 80px;
 }
 
 header {
@@ -116,4 +129,79 @@ header nav ul {
 .nav-link:hover::after {
     transform: scaleX(1);
     transform-origin: bottom left;
+}
+
+#hero-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4rem 5%;
+    min-height: calc(100vh - 70px);
+}
+
+.hero-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    
+}
+
+.hero-content h1 {
+    font-size: var(--font-h1);
+    font-weight: 800;
+    line-height: 1.1;
+    letter-spacing: -0.03em;
+    
+}
+
+.text-gradient {
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero-subtitle {
+    font-size: var(--font-body);
+    color: var(--text-muted);
+    max-width: 540px;
+}
+
+.hero-img {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-img img {
+    width: 100%;
+    max-width: 480px;
+    height: auto;
+    object-fit: cover;
+    border-radius: var(--radius-md);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+.btn-primary {
+    display: inline-block;
+    align-self: flex-start;
+    padding: 0.8rem 2rem;
+    background: var(--gradient-primary);
+    color: var(--text-main);
+    font-weight: 600;
+    border-radius: var(--radius-sm);
+    box-shadow: 0 4px 15px rgba(59, 130, 246, 0.25);
+    transition: var(--transition-smooth);
+}
+
+.btn-primary:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(59, 130, 246, 0.45);
+}
+
+.btn-primary:active {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 10px rgba(59, 130, 246, 0.3);
 }
